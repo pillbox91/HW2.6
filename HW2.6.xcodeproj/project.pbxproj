@@ -13,6 +13,7 @@
 		32E7BCB7261078CC007ED908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E7BCB5261078CC007ED908 /* Main.storyboard */; };
 		32E7BCB9261078D4007ED908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E7BCB8261078D4007ED908 /* Assets.xcassets */; };
 		32E7BCBC261078D4007ED908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E7BCBA261078D4007ED908 /* LaunchScreen.storyboard */; };
+		32E7BCCC2610FC8A007ED908 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7BCCB2610FC8A007ED908 /* ColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		32E7BCB8261078D4007ED908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32E7BCBB261078D4007ED908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32E7BCBD261078D4007ED908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E7BCCB2610FC8A007ED908 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		32E7BCAE261078CC007ED908 /* HW2.6 */ = {
 			isa = PBXGroup;
 			children = (
-				32E7BCAF261078CC007ED908 /* AppDelegate.swift */,
-				32E7BCB1261078CC007ED908 /* SceneDelegate.swift */,
-				32E7BCB3261078CC007ED908 /* ViewController.swift */,
-				32E7BCB5261078CC007ED908 /* Main.storyboard */,
-				32E7BCB8261078D4007ED908 /* Assets.xcassets */,
-				32E7BCBA261078D4007ED908 /* LaunchScreen.storyboard */,
-				32E7BCBD261078D4007ED908 /* Info.plist */,
+				32E7BCC72610F9BF007ED908 /* ViewControllers */,
+				32E7BCC62610F9A3007ED908 /* Storyboards */,
+				32E7BCC42610F96B007ED908 /* Sources */,
+				32E7BCC52610F984007ED908 /* SupportingFiles */,
 			);
 			path = HW2.6;
+			sourceTree = "<group>";
+		};
+		32E7BCC42610F96B007ED908 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32E7BCB8261078D4007ED908 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		32E7BCC52610F984007ED908 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				32E7BCB1261078CC007ED908 /* SceneDelegate.swift */,
+				32E7BCBD261078D4007ED908 /* Info.plist */,
+				32E7BCAF261078CC007ED908 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		32E7BCC62610F9A3007ED908 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				32E7BCB5261078CC007ED908 /* Main.storyboard */,
+				32E7BCBA261078D4007ED908 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		32E7BCC72610F9BF007ED908 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32E7BCB3261078CC007ED908 /* ViewController.swift */,
+				32E7BCCB2610FC8A007ED908 /* ColorViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 			files = (
 				32E7BCB4261078CC007ED908 /* ViewController.swift in Sources */,
 				32E7BCB0261078CC007ED908 /* AppDelegate.swift in Sources */,
+				32E7BCCC2610FC8A007ED908 /* ColorViewController.swift in Sources */,
 				32E7BCB2261078CC007ED908 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q56H3JNA98;
-				INFOPLIST_FILE = HW2.6/Info.plist;
+				INFOPLIST_FILE = HW2.6/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q56H3JNA98;
-				INFOPLIST_FILE = HW2.6/Info.plist;
+				INFOPLIST_FILE = HW2.6/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
